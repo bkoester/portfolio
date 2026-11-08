@@ -42,6 +42,7 @@ board below, and later the website, can be generated from it.
 | Live | [Big Ten jobs](projects/live/big-ten-jobs.md) | todo | Remove personal search pages; check history; make public |
 | Live | [Ask Ben](projects/live/ask-ben.md) | todo | Review eval results |
 | Live | [WCC pathfinder](projects/live/wcc-pathfinder.md) | todo | Write the case study |
+| Live | [Car search](projects/live/car-search.md) | todo | Make public; write the case study |
 | Live | [College scraper](projects/live/college-scraper.md) | todo | Consolidate setup docs into one README |
 | U-M HR | [HR chatbot](projects/um-hr/hr-chatbot.md) | todo | Public policy-handbook demo |
 | U-M HR | [Attrition modeling](projects/um-hr/attrition.md) | todo | Build the Midwestern State simulator |

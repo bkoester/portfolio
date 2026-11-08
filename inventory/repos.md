@@ -21,7 +21,7 @@ portfolio needs from it.
 | fantrax | private | personal | — | Keep private |
 | whatsapp-nick-bot | private | personal | — | Keep private |
 | claude-code-prompts | private | personal | — | Keep private |
-| car-search | private, archived | personal | — | Keep private |
+| car-search | private, archived | live | [car-search](../projects/live/car-search.md) | History clean (no keys, VINs or personal notes); optional scrub of S3 bucket and laptop paths; then public |
 | wod-search-firestore | private | personal | — | Keep private |
 | publications | ? | past | [publications.md](../publications.md) | Add a site-page output to generate_outputs.py |
 | PLA | public | past | [grade-penalties](../projects/past/grade-penalties.md) | Becomes the consolidated home; README states data is synthetic |
