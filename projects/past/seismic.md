@@ -1,0 +1,55 @@
+---
+title: SEISMIC STEM-equity collaboration
+bucket: past
+status: todo
+visibility: description-only
+repos: [SEISMIC]
+papers: [10.1186/s40594-024-00474-7, 10.1187/cbe.24-02-0051, 10.3389/feduc.2023.1176876, 10.1187/cbe.21-06-0158]
+next: Decide whether to scrub the repo or make it private
+---
+
+# SEISMIC STEM-equity collaboration
+
+Shared code and standards for a multi-institution collaboration studying who succeeds in early STEM courses, and
+why. Four journal papers from 2022 to 2024.
+
+## The problem
+
+Equity gaps in STEM courses look different at each university. Comparing them needs the same definitions,
+samples and analyses everywhere.
+
+## Data
+
+Each institution ran the shared code on its own student-record and student-course tables. No data left any
+campus.
+
+## Approach
+
+Shared R code for course performance, grade comparisons by gender, first-generation and underrepresented status,
+pairwise student similarity, and replication of collaborators' analyses.
+
+## Results
+
+Open question: one sentence per paper on what it found.
+
+## Papers
+
+- Castle, Byrd, Koester et al. Systemic advantage has a meaningful relationship with grade outcomes in students'
+  early STEM courses at six research universities. International Journal of STEM Education, 2024.
+  doi:10.1186/s40594-024-00474-7
+- Denaro et al. A Multi-institutional Cluster Analysis to Identify Groups of Courses with Exemplary Opportunity
+  Gaps for Undergraduate Students in the Biological Sciences. CBE—Life Sciences Education, 2024.
+  doi:10.1187/cbe.24-02-0051
+- Major curricula as structures for disciplinary acculturation that contribute to student minoritization.
+  Frontiers in Education, 2023. doi:10.3389/feduc.2023.1176876
+- Integrating Critical Approaches into Quantitative STEM Equity Work. CBE—Life Sciences Education, 2022.
+  doi:10.1187/cbe.21-06-0158
+
+## Code
+
+- SEISMIC (public today). Contains SQL that names internal tables.
+
+## To resolve
+
+- [ ] Either delete the LARC SQL files and rename columns, or make the repo private and let the papers carry it
+- [ ] Fill in Results

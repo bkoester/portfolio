@@ -1,0 +1,61 @@
+---
+title: Grade penalties and course pathways
+bucket: past
+status: todo
+visibility: public
+repos: [PLA, pla-devel, aim-analytics, cic-gp]
+papers: [10.1177/2332858417743754, 10.3886/e108502v1, 10.1119/perc.2016.pr.042]
+next: Fold the four repos into PLA and archive the rest
+---
+
+# Grade penalties and course pathways
+
+Do students earn lower grades in some courses than their overall record predicts, and does that gap differ by
+gender? Across large introductory courses at five research universities, it does, and the pattern was published
+in AERA Open in 2017.
+
+## The problem
+
+Introductory STEM courses act as gates. A course that grades a group of students well below their own average
+elsewhere can push them out of a major without anyone noticing.
+
+## Data
+
+Student-record and student-course tables: one row per student, one row per student-course. The public repos
+carry a synthetic version (about 139,000 students and 1.3 million course records) built for the Practical
+Learning Analytics course.
+
+## Approach
+
+Grade in a course compared with grade point average in other courses (GPAO); propensity-score matching with
+`optmatch`; course-to-course persistence; treemaps and bar charts of course pathways before, during and after
+a course; student networks rendered with Gephi.
+
+## Results
+
+Open question: one or two headline findings from the AERA Open paper, stated in plain words.
+
+## Papers
+
+- Matz, Koester, Fiorini, Grom, Shepard, Stangor, Weiner & McKay. Patterns of Gendered Performance Differences
+  in Large Introductory Courses at Five Research Universities. AERA Open, 2017. doi:10.1177/2332858417743754
+- Replication data, openICPSR 108502, 2019. doi:10.3886/e108502v1
+- Koester, Grom & McKay. Patterns of Gendered Performance Difference in Introductory STEM Courses. arXiv, 2016
+- Knaub, Koester, Henderson & McKay. Supporting faculty and staff to make better use of learning analytics data.
+  PERC, 2016. doi:10.1119/perc.2016.pr.042
+
+## Code
+
+- [PLA](https://github.com/bkoester/PLA): grade-penalty, persistence and pathway modules with synthetic data
+- pla-devel, aim-analytics, cic-gp: earlier versions of the same code; to be folded in and archived
+
+## Teaching
+
+The same code ran the Practical Learning Analytics online course and the AIM-Analytics seminar series at
+Michigan.
+
+## To resolve
+
+- [ ] Fold pla-devel, aim-analytics and cic-gp into PLA; archive them
+- [ ] README states plainly that the data is synthetic and links the papers
+- [ ] Fill in Results
