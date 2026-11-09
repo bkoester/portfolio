@@ -65,5 +65,5 @@ portfolio needs from it.
 | frontend-nanodegree-resume | public, fork | — | — | Archive |
 
 Security notes from the review: no credentials, keys or connection strings were found in the full history of
-any public repo. The PLA, pla-devel and aim-analytics student tables are synthetic. one SQL file in the public
+any public repo. The PLA, pla-devel and aim-analytics student tables are synthetic. One SQL file in the public
 LARC repo names internal warehouse tables and columns.
