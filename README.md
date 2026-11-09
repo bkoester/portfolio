@@ -68,10 +68,10 @@ fills it in.
 | 2022 | [CBII Student Experience Analytics (dataset)](papers/icpsr-2022-cbii-student-experience.md) | study page, user guide | Transcript of the Future |
 | 2021 | [ECoach in gateway courses](papers/lak21-ecoach.md) | abstract | — |
 | 2020 | [Campus Connections](papers/ihe-2020-campus-connections.md) | full text | Campus networks |
-| 2019 | [Rearchitecting data for researchers](papers/jla-2019-rearchitecting-data.md) | abstract | Data architecture |
+| 2019 | [Rearchitecting data for researchers](papers/jla-2019-rearchitecting-data.md) | full text | Data architecture |
 | 2018 | [Categorization, intersectionality and learning analytics](papers/lak18-categorization-intersectionality.md) | abstract | LASI workshop |
 | 2017 | [Gendered grade gaps at five universities](papers/aera-open-2017-gendered-performance.md) | full text | Grade penalties |
-| 2017 | [Transcript of the Future](papers/lak17-transcript-of-the-future.md) | not reached; draft and dataset pages | Transcript of the Future |
+| 2017 | [Transcript of the Future](papers/lak17-transcript-of-the-future.md) | full text | Transcript of the Future |
 | 2016 | [Grade penalties and gender gaps at Michigan](papers/arxiv-2016-gendered-performance.md) | full text | Grade penalties |
 | 2016 | [What faculty need to use learning-analytics data](papers/perc-2016-supporting-faculty.md) | abstract | Grade penalties |
 | 2007 | [The MaxBCG catalog](papers/apj-2007-maxbcg-catalog.md) | full text | MaxBCG |

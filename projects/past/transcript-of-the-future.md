@@ -33,8 +33,13 @@ credit intensity; course and demographic diversity; student-course fixed effects
 - The measures became research infrastructure: computed for the undergraduate population of 19 public universities
   in the College and Beyond II study (1.3 million students, 46.9 million enrollments) and released through ICPSR,
   with four variables credited to the LAK17 paper ([CBII summary](../../papers/icpsr-2022-cbii-student-experience.md))
-- Open question for Ben: one or two headline findings from LAK17 itself
-  ([paper summary](../../papers/lak17-transcript-of-the-future.md); the full text wasn't reachable)
+- On 4.4 million grades for 192,987 Michigan students, a student fixed-effects model gave a fairer picture than
+  GPA: average grades differ by more than 25% across disciplines, and GPAs within 0.05 of each other are
+  statistically indistinguishable ([LAK17](../../papers/lak17-transcript-of-the-future.md))
+- Ranking honors by the new measure instead of GPA would reshuffle them: English's top distinction level would go
+  from 9 students to none, mathematics' from 4 to 15
+- Breadth and classmate-diversity measures turned out nearly independent of performance, so they add information
+  a transcript currently lacks
 
 ## Papers
 
@@ -54,4 +59,4 @@ credit intensity; course and demographic diversity; student-course fixed effects
 - [ ] Rename LARC column names (STDNT_ID, SBJCT_CD, CATLG_NBR and the rest) to generic names in code and README
 - [ ] Decide on the LAK19 draft: post as a preprint, or retire it
 - [ ] Add a small synthetic sample so the toolkit runs end to end
-- [ ] Fill in Results
+- [x] Fill in Results (from the papers; see papers/)
