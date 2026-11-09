@@ -16,6 +16,15 @@ This repo describes Ben Koester's work for a public audience. Anything written h
   synthesizer (CTGAN, SDV or similar) to U-M records; that output is still derived from U-M data.
 - Parallel code is written fresh, on personal equipment and time.
 
+## Writing paper summaries (papers/)
+
+- Summaries are written in our own words from the paper's text. No copied sentences; at most one
+  short quote (under 15 words) per paper, in quotation marks.
+- Every number must appear in the paper; note where with the finding. If unsure, leave it out.
+- `source_read` says whether the summary came from the full text or only the abstract.
+- "My role" comes from the paper's author-contributions statement, or from Ben. Never guessed.
+- `status: reviewed` only after Ben has checked the summary.
+
 ## Writing case studies
 
 - Every project file keeps its front matter current: `status` is one of `todo`, `in-progress`, `done`.

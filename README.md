@@ -16,11 +16,13 @@ projects/
   past/     Past projects with papers behind them; repos need finishing, consolidating or scrubbing
   live/     Current projects on GitHub, most running on the self-healing EC2 host
   um-hr/    Current U-M HR work: described at a public level, shown through synthetic-data parallels
+papers/     One summary per anchor paper: question, data, approach, findings, my role
 inventory/
   repos.md  Every repo in the account, its bucket, and what to do with it
 publications.md   Which papers anchor which projects
 templates/
   case-study.md   Skeleton for a new project file
+  paper.md        Skeleton for a new paper summary
 CLAUDE.md         Ground rules for anyone (or any agent) editing this repo
 ```
 
