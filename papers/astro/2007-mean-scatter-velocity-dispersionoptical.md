@@ -38,7 +38,7 @@ At fixed optical richness, what are the mean and the scatter of cluster velocity
 
 ## Findings
 
-- Mean dispersion rises from 202 ± 10 km/s in small groups to 854 ± 102 km/s in rich clusters [Abstract, Table 2]
+- Mean dispersion rises from 202 ± 10 km/s in small groups to more than 854 ± 102 km/s in rich clusters [Abstract, Table 2]
 - Scatter is at most 40.5 ± 3.5%, falling to 14.9 ± 9.4% in the richest bin [Abstract, Table 2]
 - On mocks the scatter is recovered within 1 sigma and the mean within 10% [Abstract, Sec. 5.3.2]
 - A lognormal scatter model fits better than a Gaussian one [Sec. 5.3.4]
