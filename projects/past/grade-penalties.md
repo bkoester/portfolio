@@ -33,7 +33,14 @@ a course; student networks rendered with Gephi.
 
 ## Results
 
-Open question: one or two headline findings from the AERA Open paper, stated in plain words.
+- At Michigan, large STEM lecture courses graded students about 0.22 letter grades below their record elsewhere,
+  and graded women about 0.1 lower than comparable men; labs showed a small bonus and no gender gap. In physics
+  the gap came from timed exams, not homework ([arXiv 2016](../../papers/arxiv-2016-gendered-performance.md))
+- Across five Big Ten universities and 1.1 million enrollments, 74% of STEM lecture courses gave grade penalties
+  while 64% of labs gave bonuses, and the lecture gender gap held across campuses, disciplines and terms
+  ([AERA Open 2017](../../papers/aera-open-2017-gendered-performance.md))
+- The same grade-anomaly measure later anchored a six-university study linking systemic advantage to grade
+  penalties ([IJ STEM Ed 2024](../../papers/seismic-2024-systemic-advantage.md))
 
 ## Papers
 
@@ -58,4 +65,5 @@ Michigan.
 
 - [ ] Fold pla-devel, aim-analytics and cic-gp into PLA; archive them
 - [ ] README states plainly that the data is synthetic and links the papers
-- [ ] Fill in Results
+- [x] Fill in Results (from the papers; see papers/)
+- [ ] Ben: his role on the AERA Open paper

@@ -21,7 +21,10 @@ persistence into the next course; LASSO for dimension reduction ahead of propens
 
 ## Related papers
 
-- McKay, Grom & Koester. Categorization, Intersectionality, and Learning Analytics. 2018 (Deep Blue)
+- McKay, Grom & Koester. Categorization, Intersectionality, and Learning Analytics. LAK 2018 extended abstract
+  ([summary](../../papers/lak18-categorization-intersectionality.md))
+- Pearson, Castle, Matz, Koester & Byrd. Integrating Critical Approaches into Quantitative STEM Equity Work.
+  CBE—LSE 2022 ([summary](../../papers/seismic-2022-critical-approaches.md))
 
 ## Code
 

@@ -30,7 +30,18 @@ pairwise student similarity, and replication of collaborators' analyses.
 
 ## Results
 
-Open question: one sentence per paper on what it found.
+- At six universities and 227,413 students, each additional systemic advantage went with a smaller grade penalty
+  in the largest introductory STEM courses, on every campus
+  ([IJ STEM Ed 2024](../../papers/seismic-2024-systemic-advantage.md)); Ben co-led the project and supported data
+  curation and analysis
+- Across 3,207 course sections at five universities, about a third showed small or no opportunity gaps, evidence
+  that equitable outcomes are achievable ([CBE—LSE 2024](../../papers/seismic-2024-opportunity-gaps.md))
+- Process mining of biology curricula at two universities showed fewer than half of even the most advantaged
+  students follow the intended sequence, and the least advantaged were far more likely to leave for non-STEM
+  degrees ([Frontiers 2023](../../papers/seismic-2023-major-curricula.md)); Ben analyzed the data and managed the
+  merged project data
+- An essay on doing quantitative equity work without deficit framing
+  ([CBE—LSE 2022](../../papers/seismic-2022-critical-approaches.md))
 
 ## Papers
 
@@ -52,4 +63,4 @@ Open question: one sentence per paper on what it found.
 ## To resolve
 
 - [ ] Either delete the LARC SQL files and rename columns, or make the repo private and let the papers carry it
-- [ ] Fill in Results
+- [x] Fill in Results (from the papers; see papers/)

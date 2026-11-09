@@ -30,7 +30,12 @@ projected networks; degree, clustering, eigenvector and triangle measures; Gephi
 
 ## Results
 
-Open question: the main findings of Campus Connections.
+- For 6,738 students entering in 2011 and the 68,946 students they shared classes with, a few courses act as the
+  campus's bridges: the largest course links students who would otherwise never meet, and some small courses
+  connect as many people as courses five times their size
+  ([Campus Connections, 2020](../../papers/ihe-2020-campus-connections.md))
+- Students cluster by major, some tightly (Neuroscience) and some loosely (Political Science); the most central
+  students were linked to nearly a quarter of their entering class
 
 ## Papers
 
@@ -47,4 +52,5 @@ Open question: the main findings of Campus Connections.
 
 - [ ] Merge into one networks repo with a synthetic example
 - [ ] Settle the weighted-networks draft: blog post, preprint, or retire
-- [ ] Fill in Results
+- [x] Fill in Results (from the paper; see papers/)
+- [ ] Ben: his role on Campus Connections
