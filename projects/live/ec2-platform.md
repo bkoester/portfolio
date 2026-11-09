@@ -5,7 +5,7 @@ status: in-progress
 visibility: public
 repos: [ec2-infra, ec2-apps]
 papers: []
-next: Ben adds the monthly bill and recovery times; then strip the subnet ID and make both repos public
+next: Ben checks the write-up; then strip the subnet ID and make both repos public
 ---
 
 # Self-healing EC2 host
@@ -58,8 +58,8 @@ flowchart LR
   outbound Cloudflare tunnels.
 - **Cost controls.** The host scales to zero from 23:30 to 07:00 Eastern, and every scheduled job is timed to
   fall inside the waking window. An AWS Budget alarms at $20 a month.
-- **AI on the host.** The journal and ask-ben apps call Claude and Titan embeddings on Bedrock through the
-  instance role, with no API keys stored; Claude Code is installed on the host, signed in once, with its login kept on the data volume.
+- **AI on the host.** Apps call Claude and Titan embeddings on Bedrock through the instance role, with no API
+  keys stored; Claude Code is installed on the host, signed in once, with its login kept on the data volume.
 
 ## Apps it runs
 
@@ -76,10 +76,14 @@ and nine scheduled jobs.
 - **The fix worked.** Widening the pool from five instance types to eight cut churn from 142 interruptions and
   197 failed launches in the 12 days before to 7 and 0 in the four days after. On the first apply, a host
   stranded by the shortage launched on one of the new types within seconds.
-- **Cheaper ceiling, same floor.** The type dropped was the priciest and smallest in the pool, so widening
-  lowered the worst-case rate. Instance time blends to about $0.029 an hour, mostly on m7gd.large.
-- Open question: the full monthly bill, including storage and snapshots.
-- Open question: typical time from interruption to apps serving again, from the group metrics.
+- **Short gaps.** From October 10 to November 9 the host dropped out 17 times during waking hours. In 15 of
+  those the group was back in service within one 5-minute metric interval, and the other two within two
+  intervals. Apps then need their boot and setup time on top, which the group metric does not see.
+- **About $13 a month for the host.** Spot compute, the data volume and snapshots came to $14.25 in August,
+  $13.58 in September and $12.32 in October. The whole AWS account, including the public IP charge and the
+  apps' Bedrock and Transcribe use, ran $22.47, $20.28 and $17.99. The type dropped in the widening was the
+  priciest and smallest in the pool, so the fix lowered the worst-case rate as well.
+- Open question: time from replacement to apps serving, from the boot logs.
 
 ## Code
 
@@ -99,7 +103,8 @@ and nine scheduled jobs.
 
 - [x] Delete terraform/tfplan and purge it from history; ignore *.tfplan
 - [x] Architecture diagram
-- [ ] Ben: monthly bill and recovery time (Results)
+- [x] Monthly bill and recovery time (Results)
+- [ ] Boot-to-serving time from the boot logs
 - [ ] Ben: check "What I'd do differently"
 - [ ] Replace the default subnet ID in variables.tf with a required variable
 - [ ] Ask GitHub Support to drop the cached refs for closed PRs #2 and #3, which still hold the old plan file
