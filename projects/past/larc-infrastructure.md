@@ -21,8 +21,9 @@ Redshift) that loaded and refreshed it.
 
 ## Papers
 
-- Rearchitecting Data for Researchers: A Collaborative Model for Enabling Institutional Learning Analytics in
-  Higher Education. Journal of Learning Analytics, 2019. doi:10.18608/jla.2019.62.8
+- Lonn & Koester. Rearchitecting Data for Researchers: A Collaborative Model for Enabling Institutional Learning
+  Analytics in Higher Education. Journal of Learning Analytics, 2019. doi:10.18608/jla.2019.62.8
+  ([summary](../../papers/jla-2019-rearchitecting-data.md))
 
 ## Code
 

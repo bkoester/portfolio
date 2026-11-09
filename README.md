@@ -40,6 +40,7 @@ board below, and later the website, can be generated from it.
 | Past | [Learning-analytics data architecture](projects/past/larc-infrastructure.md) | todo | Paper only; repos stay private |
 | Past | [Synthetic student transcripts (SSU)](projects/past/synthetic-transcripts.md) | todo | Refresh dependencies, add a worked example |
 | Past | [Equity-analytics workshop (LASI 2019)](projects/past/lasi-equity-workshop.md) | todo | Rename columns; present as teaching |
+| Past | [MaxBCG galaxy cluster finder and catalog](projects/past/maxbcg.md) | todo | Ben: role, and what the catalog went on to support |
 | Live | [Self-healing EC2 host](projects/live/ec2-platform.md) | todo | Delete committed Terraform plan; write it up |
 | Live | [Big Ten jobs](projects/live/big-ten-jobs.md) | todo | Remove personal search pages; check history; make public |
 | Live | [Ask Ben](projects/live/ask-ben.md) | todo | Review eval results |
@@ -52,6 +53,29 @@ board below, and later the website, can be generated from it.
 | U-M HR | [Report and data catalogue](projects/um-hr/data-catalogue.md) | todo | Open template for Midwestern State |
 | U-M HR | [Leadership reporting](projects/um-hr/leadership-reporting.md) | todo | Description only |
 | U-M HR | [Docs to GitHub knowledge-base sync](projects/um-hr/docs-kb-sync.md) | todo | Rewrite as a small open-source tool |
+
+## Papers
+
+Summaries written from each paper's text. `drafted` means not yet checked by Ben; "My role" stays open until he
+fills it in.
+
+| Year | Paper | Read from | Project |
+| --- | --- | --- | --- |
+| 2024 | [Systemic advantage and grade penalties at six universities](papers/seismic-2024-systemic-advantage.md) | full text | SEISMIC, grade penalties |
+| 2024 | [Opportunity gaps across 3,207 course sections](papers/seismic-2024-opportunity-gaps.md) | full text | SEISMIC |
+| 2023 | [The biology curriculum students actually take](papers/seismic-2023-major-curricula.md) | full text | SEISMIC |
+| 2022 | [Quantitative equity work without deficit framing](papers/seismic-2022-critical-approaches.md) | full text | SEISMIC, LASI workshop |
+| 2022 | [CBII Student Experience Analytics (dataset)](papers/icpsr-2022-cbii-student-experience.md) | study page, user guide | Transcript of the Future |
+| 2021 | [ECoach in gateway courses](papers/lak21-ecoach.md) | abstract | — |
+| 2020 | [Campus Connections](papers/ihe-2020-campus-connections.md) | full text | Campus networks |
+| 2019 | [Rearchitecting data for researchers](papers/jla-2019-rearchitecting-data.md) | abstract | Data architecture |
+| 2018 | [Categorization, intersectionality and learning analytics](papers/lak18-categorization-intersectionality.md) | abstract | LASI workshop |
+| 2017 | [Gendered grade gaps at five universities](papers/aera-open-2017-gendered-performance.md) | full text | Grade penalties |
+| 2017 | [Transcript of the Future](papers/lak17-transcript-of-the-future.md) | not reached; draft and dataset pages | Transcript of the Future |
+| 2016 | [Grade penalties and gender gaps at Michigan](papers/arxiv-2016-gendered-performance.md) | full text | Grade penalties |
+| 2016 | [What faculty need to use learning-analytics data](papers/perc-2016-supporting-faculty.md) | abstract | Grade penalties |
+| 2007 | [The MaxBCG catalog](papers/apj-2007-maxbcg-catalog.md) | full text | MaxBCG |
+| 2007 | [The MaxBCG cluster finder](papers/apj-2007-maxbcg-finder.md) | full text | MaxBCG |
 
 ## Order of work
 

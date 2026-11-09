@@ -30,7 +30,11 @@ credit intensity; course and demographic diversity; student-course fixed effects
 
 ## Results
 
-Open question: the main findings from LAK17, and what the CBII dataset made possible.
+- The measures became research infrastructure: computed for the undergraduate population of 19 public universities
+  in the College and Beyond II study (1.3 million students, 46.9 million enrollments) and released through ICPSR,
+  with four variables credited to the LAK17 paper ([CBII summary](../../papers/icpsr-2022-cbii-student-experience.md))
+- Open question for Ben: one or two headline findings from LAK17 itself
+  ([paper summary](../../papers/lak17-transcript-of-the-future.md); the full text wasn't reachable)
 
 ## Papers
 
