@@ -56,7 +56,7 @@ credit intensity; course and demographic diversity; student-course fixed effects
 
 ## To resolve
 
-- [ ] Rename LARC column names (STDNT_ID, SBJCT_CD, CATLG_NBR and the rest) to generic names in code and README
+- [ ] Rename the internal column names to generic ones in code and README
 - [ ] Decide on the LAK19 draft: post as a preprint, or retire it
 - [ ] Add a small synthetic sample so the toolkit runs end to end
 - [x] Fill in Results (from the papers; see papers/)

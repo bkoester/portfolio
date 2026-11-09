@@ -37,7 +37,7 @@ portfolio needs from it.
 | NetworkWeightingManuscript | private | past | [campus-networks](../projects/past/campus-networks.md) | Settle: blog post, preprint, or retire |
 | SSU | public | past | [synthetic-transcripts](../projects/past/synthetic-transcripts.md) | Refresh dependencies; add worked example |
 | calibrated-GPA | public, fork | past | [synthetic-transcripts](../projects/past/synthetic-transcripts.md) | Add a README or archive |
-| LARC | public | past | [larc-infrastructure](../projects/past/larc-infrastructure.md) | Contains internal names and LARC_PII.sql; make private |
+| LARC | public | past | [larc-infrastructure](../projects/past/larc-infrastructure.md) | Contains internal table and column names; make private |
 | aws_larc_pipeline | private | past | [larc-infrastructure](../projects/past/larc-infrastructure.md) | Keep private |
 | aws_larc_cookbook | private | past | [larc-infrastructure](../projects/past/larc-infrastructure.md) | Keep private |
 | larc_redshift_load | private | past | [larc-infrastructure](../projects/past/larc-infrastructure.md) | Keep private |
@@ -65,5 +65,5 @@ portfolio needs from it.
 | frontend-nanodegree-resume | public, fork | — | — | Archive |
 
 Security notes from the review: no credentials, keys or connection strings were found in the full history of
-any public repo. The PLA, pla-devel and aim-analytics student tables are synthetic. LARC_PII.sql in the public
+any public repo. The PLA, pla-devel and aim-analytics student tables are synthetic. one SQL file in the public
 LARC repo names internal warehouse tables and columns.

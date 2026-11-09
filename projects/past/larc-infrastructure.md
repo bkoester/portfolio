@@ -42,5 +42,5 @@ All repos stay private: they name internal tables and columns throughout.
 
 ## To resolve
 
-- [ ] Make the public LARC repo private (it includes LARC_PII.sql, which names internal tables)
+- [ ] Make the public LARC repo private (one of its SQL files names internal tables)
 - [ ] One paragraph on the AWS pipeline design, in general terms
