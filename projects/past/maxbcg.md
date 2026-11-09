@@ -5,7 +5,7 @@ status: todo
 visibility: description-only
 repos: []
 papers: [10.1086/512092, 10.1086/509599]
-next: Ben adds his role and one line on what the catalog was later used for
+next: Ben adds his role
 ---
 
 # MaxBCG galaxy cluster finder and catalog
@@ -37,6 +37,21 @@ completeness measured against simulations, shuffled data and inserted fake clust
 - Photometric redshifts accurate to about 0.01; 94 of 99 known X-ray clusters in the area recovered
 - False detections below 1% for richer clusters ([finder paper](../../papers/apj-2007-maxbcg-finder.md))
 
+## What it went on to support
+
+The catalog became the basis for a run of collaboration papers, several with Ben as co-author:
+
+- Weak-lensing mass calibration of the clusters, stacking background galaxy shapes around them
+  ([2007](../../papers/astro/2007-crosscorrelation-weak-lensing-sdss.md))
+- Cosmological constraints from cluster counts: an early result of σ8 = 0.92 ± 0.10
+  ([2007](../../papers/astro/2007-cosmological-constraints-sdss-maxbcg.md)), refined to σ8 = 0.807 ± 0.020 when
+  combined with WMAP5, about twice as tight as WMAP5 alone
+  ([2010](../../papers/astro/2010-cosmological-constraints-sloan-digital.md))
+- Successor cluster finders and catalogs: GMBCG, which recovers 13,374 of the 13,823 maxBCG clusters
+  ([2010](../../papers/astro/2010-gmbcg-galaxy-cluster-catalog.md)), and redMaPPer, about 25,000 clusters from the
+  later SDSS data release ([2014](../../papers/astro/2014-redmapper-i-algorithm-sdss.md))
+- The thesis behind it all ([2006](../../papers/astro/2006-maxbcg-systematic-discovery-characterization.md))
+
 ## Why it reads well to a client
 
 Validating a detection algorithm against simulated ground truth, quantifying false positives and false negatives,
@@ -51,4 +66,5 @@ production.
 
 ## To resolve
 
-- [ ] Ben: his role and one line on what the catalog went on to support
+- [x] What the catalog went on to support (from the papers)
+- [ ] Ben: his role on the finder and catalog papers
