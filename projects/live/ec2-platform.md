@@ -67,6 +67,36 @@ big-ten-jobs (scraper, feed and explorer), ask-ben (database, API, evaluation), 
 dashboard and Discord bot, a journal dashboard, the workspace project-notes agent, and fantrax: 15 containers
 and nine scheduled jobs.
 
+## The Discord agent (under review)
+
+Since July 2026 the host has also run a personal planning agent reached through Discord. It grew in phases:
+
+- **Scheduled runs with nudges.** Timers start headless Claude Code runs that read a private project-notes repo
+  and post to a private Discord channel: a morning brief, a nightly sweep of the notes, a weekly report on Spot
+  interruptions and cost, and reminders set from chat.
+- **Two-way chat.** A bot holds an outbound-only connection to Discord, so messages and uploaded notes are
+  routed to the right project in the repo and committed, with no inbound port opened on the host.
+- **Guard rails added along the way.** A tool allowlist, a fetch allowlist for web pages, a retry on overloaded
+  responses, a warning before the login token expires, and an archive step that records why a project left
+  the index.
+
+Status: still running, but in limbo. The chat mode has not earned its keep, and project tracking is moving to
+scheduled tasks that read the same repo. Open question for the write-up: what specifically fell short.
+
+## What came and went
+
+The decoupled design makes an app cheap to add and cheap to remove, and the history shows it being used that
+way. Retired so far:
+
+| What | Ran | What happened |
+| --- | --- | --- |
+| OpenClaw agent gateway | Mar to Apr 2026 | The host's original purpose. Tried as a container, then a native install, then removed; the host was reset to a generic app platform. |
+| NanoClaw personal assistant | Mar to Apr 2026 | Auto-deployed on boot for two weeks, then removed in the same reset. |
+| Big Ten daily digest email | May to Oct 2026 | The email was dropped; the scrape and its feed carry on. |
+| Flight-price watch | Sep to Oct 2026 | A daily price check in the morning brief, retired after a month. |
+| Car-search tracker | Sep to Nov 2026 | Its refresh timer was removed first because it burned a metered API; the app was archived once the search ended, with a restore runbook kept in its repo. |
+| Overnight shutdown | removed, then restored Aug 2026 | Dropped to run around the clock, then brought back with an earlier cut-off because nothing needed serving overnight. |
+
 ## Results
 
 - **Spot churn, measured.** 27 days of scaling activity in July and August 2026 showed 272 Spot interruptions
@@ -106,6 +136,7 @@ and nine scheduled jobs.
 - [x] Monthly bill and recovery time (Results)
 - [ ] Boot-to-serving time from the boot logs
 - [ ] Ben: check "What I'd do differently"
+- [ ] Ben: what fell short with the Discord chat mode, and anything missing from the retired list
 - [ ] Replace the default subnet ID in variables.tf with a required variable
 - [ ] Ask GitHub Support to drop the cached refs for closed PRs #2 and #3, which still hold the old plan file
 - [ ] Review ec2-apps for secrets; then make both repos public
