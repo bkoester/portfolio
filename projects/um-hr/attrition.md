@@ -39,8 +39,33 @@ changes, remote eligibility. Rates and tenure curves tuned to public sources:
 
 Builds on [SSU](../past/synthetic-transcripts.md), the earlier synthetic-transcript generator.
 
+## Federal workforce data: what it holds (checked 2026-11-09)
+
+OPM's [Federal Workforce Data](https://data.opm.gov/) publishes three record-level monthly files from EHRI:
+employment (month-end snapshot, about 2.1M rows), accessions and separations. The new format runs from about
+2021, monthly, through a free Parquet API with no key; older FedScope files go back to 1998 (headcount) and
+FY2005 (separations). Fields: agency and sub-agency, occupation, grade and pay plan, salary, age bracket,
+education, years of service, supervisory status, appointment type, work schedule, duty station; separations add
+a reason code (quit, retirement, RIF, termination, transfer) and a deferred-resignation flag.
+
+Limits that shape the plan:
+
+- **No person ID.** Records can't be linked across months, so no person-level attrition model from this data.
+- **No sex, race, ethnicity or disability** (removed under 2025 executive orders); fairness checks only by age
+  bracket and education.
+- Some pay and about half of duty-station state values redacted; USPS and intelligence agencies excluded.
+- 2025 is an outlier (about 125,000 separations in September 2025 against a typical 20,000 a month).
+
+So the two datasets split the work:
+
+- **Federal data**: the medallion pipeline, and group-level exit curves. Separations by years of service
+  divided by headcount at the same tenure gives real hazard curves by agency, occupation, grade and age bracket,
+  split by reason.
+- **Midwestern State**: person-level prediction, planted causes, leakage traps and fairness checks.
+
 ## To resolve
 
 - [ ] Simulator spec: org structure, variables, true causal drivers
+- [ ] Group-level exit curves on the federal data (tenure hazard by agency, occupation, grade; quits vs retirements)
 - [ ] Build the simulator and the model in Databricks Free Edition
 - [ ] Write the case study

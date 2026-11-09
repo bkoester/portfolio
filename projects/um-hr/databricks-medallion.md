@@ -23,10 +23,15 @@ schemas, all code in GitHub.
 
 ## Data for the parallel
 
-The Midwestern State simulator.
+- **OPM Federal Workforce Data**: monthly employment, accessions and separations Parquet files from a free API
+  (see [attrition](attrition.md) for what the files hold and their limits). Real-world mess to handle: monthly
+  versioned releases with revisions, "REDACTED" values, code-and-label pairs, and the format change from the
+  older FedScope files.
+- **The Midwestern State simulator**, for person-level tables.
 
 ## To resolve
 
+- [ ] Check whether Free Edition serverless compute can reach the OPM API; if not, pull files on the EC2 host and upload
 - [ ] Pipeline design note: layers, tables, refresh cadence
 - [ ] Build it
 - [ ] Databricks certification

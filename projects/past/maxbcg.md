@@ -1,11 +1,11 @@
 ---
 title: MaxBCG galaxy cluster finder and catalog
 bucket: past
-status: todo
+status: done
 visibility: description-only
 repos: []
-papers: [10.1086/512092, 10.1086/509599]
-next: Ben adds his role
+papers: [10.1086/512092, 10.1086/509599, hdl:2027.42/126198]
+next: none
 ---
 
 # MaxBCG galaxy cluster finder and catalog
@@ -50,7 +50,16 @@ The catalog became the basis for a run of collaboration papers, several with Ben
 - Successor cluster finders and catalogs: GMBCG, which recovers 13,374 of the 13,823 maxBCG clusters
   ([2010](../../papers/astro/2010-gmbcg-galaxy-cluster-catalog.md)), and redMaPPer, about 25,000 clusters from the
   later SDSS data release ([2014](../../papers/astro/2014-redmapper-i-algorithm-sdss.md))
-- The thesis behind it all ([2006](../../papers/astro/2006-maxbcg-systematic-discovery-characterization.md))
+- Calibrating richness against other mass signals: velocity dispersions
+  ([2007](../../papers/astro/2007-mean-scatter-velocity-dispersionoptical.md)), X-ray luminosity
+  ([2008](../../papers/astro/2008-measuring-mean-scatter-xray.md)), and an improved richness estimate
+  ([2009](../../papers/astro/2009-improvement-richness-estimates-maxbcg.md))
+
+## My role
+
+First author of both papers. The finder and catalog were the core of Ben's PhD thesis at Michigan, where
+Chapters 3 and 4 are adapted from them
+([thesis](../../papers/astro/2006-maxbcg-systematic-discovery-characterization.md)).
 
 ## Why it reads well to a client
 
@@ -63,8 +72,9 @@ production.
 - Koester et al. (2007). MaxBCG: A Red-Sequence Galaxy Cluster Finder. ApJ. doi:10.1086/512092
 - Koester et al. (2007). A MaxBCG Catalog of 13,823 Galaxy Clusters from the Sloan Digital Sky Survey. ApJ.
   doi:10.1086/509599
+- Koester (2006). MaxBCG: Systematic Discovery, Characterization and Calibration of Galaxy Clusters from Large
+  Optical Surveys. PhD thesis, University of Michigan. hdl:2027.42/126198
 
-## To resolve
+## Code and data
 
-- [x] What the catalog went on to support (from the papers)
-- [ ] Ben: his role on the finder and catalog papers
+No code repo. The catalog itself was released publicly as FITS and ASCII tables with the 2007 paper.

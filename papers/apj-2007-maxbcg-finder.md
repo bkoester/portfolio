@@ -51,7 +51,8 @@ It produced the large, uniformly selected cluster samples cosmology needs, and w
 
 ## My role
 
-First author. Ben to add specifics.
+First author. The paper is adapted into Chapter 3 of Ben's PhD thesis
+([thesis](astro/2006-maxbcg-systematic-discovery-characterization.md)).
 
 ## Cite
 

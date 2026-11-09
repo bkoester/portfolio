@@ -51,7 +51,8 @@ cosmological constraints, which the paper lays out as the next steps.
 
 ## My role
 
-First author. Ben to add specifics.
+First author. The paper is adapted into Chapter 4 of Ben's PhD thesis
+([thesis](astro/2006-maxbcg-systematic-discovery-characterization.md)).
 
 ## Cite
 
