@@ -7,7 +7,7 @@ doi: 10.1088/0004-637x/746/1/85
 url: https://doi.org/10.1088/0004-637x/746/1/85
 open_access: true
 first_author: false
-author_position: 36 of 66
+author_position: 36 of 65
 projects: []
 source_read: full text
 status: drafted
@@ -53,7 +53,7 @@ supernovae. They suggest cluster fields observed with WFC3 on HST as an efficien
 
 ## My role
 
-Not stated in the paper (author 36 of 66). Ben to fill in.
+Not stated in the paper (author 36 of 65). Ben to fill in.
 
 ## Cite
 

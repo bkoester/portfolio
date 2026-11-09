@@ -7,7 +7,7 @@ doi: 10.1088/0004-6256/138/5/1271
 url: https://doi.org/10.1088/0004-6256/138/5/1271
 open_access: true
 first_author: false
-author_position: 30 of 61
+author_position: 30 of 60
 projects: []
 source_read: full text
 status: drafted
@@ -54,7 +54,7 @@ survey with WFC3 could yield "a SN in every cluster" [Sec. 6].
 
 ## My role
 
-Not stated in the paper (author 30 of 61). Ben to fill in.
+Not stated in the paper (author 30 of 60). Ben to fill in.
 
 ## Cite
 

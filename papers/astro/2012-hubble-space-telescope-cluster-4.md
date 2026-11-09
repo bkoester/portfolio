@@ -7,7 +7,7 @@ doi: 10.1088/0004-637x/750/1/1
 url: https://doi.org/10.1088/0004-637x/750/1/1
 open_access: true
 first_author: false
-author_position: 21 of 39
+author_position: 21 of 38
 projects: []
 source_read: partial full text
 status: drafted
@@ -51,7 +51,7 @@ surveys targeting massive galaxies may pick up a brightness bias that cosmology 
 
 ## My role
 
-Not stated in the paper (author 21 of 39). Ben to fill in.
+Not stated in the paper (author 21 of 38). Ben to fill in.
 
 ## Cite
 
