@@ -97,7 +97,7 @@ way. Retired so far:
 
 | What | Ran | What happened |
 | --- | --- | --- |
-| OpenClaw agent gateway | Mar to Apr 2026 | The host's original purpose. Tried as a container, then a native install, then removed; the host was reset to a generic app platform. |
+| OpenClaw agent gateway | Mar to Apr 2026 | The host's original purpose: run the agent in the cloud to keep it off the laptop, for security. Tried as a container, then a native install. It never reliably survived Spot interruptions, a problem Claude Code on the same host has not had, so it was removed and the host reset to a generic app platform. |
 | NanoClaw personal assistant | Mar to Apr 2026 | Auto-deployed on boot for two weeks, then removed in the same reset. |
 | Big Ten daily digest email | May to Oct 2026 | The email was dropped; the scrape and its feed carry on. |
 | Flight-price watch | Sep to Oct 2026 | A daily price check in the morning brief, retired after a month. |
@@ -135,6 +135,9 @@ way. Retired so far:
   until it was purged from history in November.
 - Start with several instance types. The first version relied on a single Spot pool and churned whenever that
   pool ran dry.
+- Pay for the API where a person is waiting on the reply, and keep the cheap route for scheduled jobs nobody
+  watches.
+- Give a bot one job. Several small, focused bots beat one that does everything.
 
 ## To resolve
 
@@ -142,7 +145,7 @@ way. Retired so far:
 - [x] Architecture diagram
 - [x] Monthly bill and recovery time (Results)
 - [ ] Boot-to-serving time from the boot logs
-- [ ] Ben: check "What I'd do differently"
+- [x] "What I'd do differently" checked by Ben
 - [x] What fell short with the Discord chat mode
 - [ ] Ben: anything missing from the retired list
 - [ ] Replace the default subnet ID in variables.tf with a required variable
