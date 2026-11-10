@@ -80,8 +80,15 @@ Since July 2026 the host has also run a personal planning agent reached through 
   responses, a warning before the login token expires, and an archive step that records why a project left
   the index.
 
-Status: still running, but in limbo. The chat mode has not earned its keep, and project tracking is moving to
-scheduled tasks that read the same repo. Open question for the write-up: what specifically fell short.
+Status: still running, and under review. Two things fell short:
+
+- **Slow replies.** To keep costs down, the bot answers each message by starting a headless Claude Code run
+  on a subscription login instead of calling the API. That saved money and cost responsiveness: replies are
+  slow enough to make chat a poor experience.
+- **Too broad.** The agent took on too many responsibilities, with too many ways to manage each one. The
+  narrower bots on the same host, each with one job, worked better.
+
+Project tracking is moving to scheduled tasks that read the same repo.
 
 ## What came and went
 
@@ -136,7 +143,8 @@ way. Retired so far:
 - [x] Monthly bill and recovery time (Results)
 - [ ] Boot-to-serving time from the boot logs
 - [ ] Ben: check "What I'd do differently"
-- [ ] Ben: what fell short with the Discord chat mode, and anything missing from the retired list
+- [x] What fell short with the Discord chat mode
+- [ ] Ben: anything missing from the retired list
 - [ ] Replace the default subnet ID in variables.tf with a required variable
 - [ ] Ask GitHub Support to drop the cached refs for closed PRs #2 and #3, which still hold the old plan file
 - [ ] Review ec2-apps for secrets; then make both repos public
