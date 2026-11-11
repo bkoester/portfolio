@@ -5,7 +5,7 @@ portfolio needs from it.
 
 | Repo | Visibility | Bucket | Project | Action |
 | --- | --- | --- | --- | --- |
-| ec2-infra | private | live | [ec2-platform](../projects/live/ec2-platform.md) | Delete committed terraform/tfplan and purge from history; strip account IDs; then public |
+| ec2-infra | private | live | [ec2-platform](../projects/live/ec2-platform.md) | Strip account IDs and the default subnet ID; then public |
 | ec2-apps | private | live | [ec2-platform](../projects/live/ec2-platform.md) | Review for secrets; then public alongside ec2-infra |
 | big-ten-jobs | private | live | [big-ten-jobs](../projects/live/big-ten-jobs.md) | Remove personal search and fit scoring; check history for .env; then public |
 | ask-ben | public | live | [ask-ben](../projects/live/ask-ben.md) | Review eval results |

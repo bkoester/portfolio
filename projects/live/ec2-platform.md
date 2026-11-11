@@ -86,7 +86,8 @@ Status: still running, and under review. Two things fell short:
   on a subscription login instead of calling the API. That saved money and cost responsiveness: replies are
   slow enough to make chat a poor experience.
 - **Too broad.** The agent took on too many responsibilities, with too many ways to manage each one. The
-  narrower bots on the same host, each with one job, worked better.
+  narrower bots on the same host, each with one job, worked better, though they had their own limit: fixed
+  tools, so a question outside those tools went unanswered.
 
 Project tracking is moving to scheduled tasks that read the same repo.
 
@@ -135,11 +136,14 @@ way. Retired so far:
   pool ran dry.
 - Pay for the API where a person is waiting on the reply, and keep the cheap route for scheduled jobs nobody
   watches.
-- Give a bot one job. Several small, focused bots beat one that does everything.
+- Teach a bot the data, not only hand it tools. The focused bots got fixed tools (read a database, call an
+  API, run a set analysis) and little freedom to write their own queries, so many lines of questioning
+  dead-ended for want of the right tool. The broader agent ran on a more capable model but still was not shown
+  the query language, the logic of the tables or sample queries, so it could not reliably write new queries
+  either. More time on worked examples would probably have helped both.
 
 ## To resolve
 
-- [x] Delete terraform/tfplan and purge it from history; ignore *.tfplan
 - [x] Architecture diagram
 - [x] Monthly bill and recovery time (Results)
 - [ ] Boot-to-serving time from the boot logs
@@ -147,6 +151,5 @@ way. Retired so far:
 - [x] What fell short with the Discord chat mode
 - [ ] Ben: anything missing from the retired list
 - [ ] Replace the default subnet ID in variables.tf with a required variable
-- [ ] Ask GitHub Support to drop the cached refs for closed PRs #2 and #3, which still hold the old plan file
 - [ ] Review ec2-apps for secrets; then make both repos public
 - [ ] Consider publishing as a reusable template
