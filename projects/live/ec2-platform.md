@@ -131,8 +131,6 @@ way. Retired so far:
 
 ## What I'd do differently
 
-- Ignore Terraform plan files from the first commit. One was committed in April and carried a state snapshot
-  until it was purged from history in November.
 - Start with several instance types. The first version relied on a single Spot pool and churned whenever that
   pool ran dry.
 - Pay for the API where a person is waiting on the reply, and keep the cheap route for scheduled jobs nobody
