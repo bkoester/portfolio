@@ -43,7 +43,7 @@ board below, and later the website, can be generated from it.
 | Past | [MaxBCG galaxy cluster finder and catalog](projects/past/maxbcg.md) | done | — |
 | Live | [Self-healing EC2 host](projects/live/ec2-platform.md) | done | Make both repos public |
 | Live | [Home solar and battery advisor](projects/live/solar.md) | in-progress | Ben checks the write-up |
-| Live | [Big Ten jobs](projects/live/big-ten-jobs.md) | todo | Remove personal search pages; check history; make public |
+| Live | [University job postings tracker](projects/live/big-ten-jobs.md) | in-progress | Ben runs the findings script |
 | Live | [Ask Ben](projects/live/ask-ben.md) | todo | Review eval results |
 | Live | [WCC pathfinder](projects/live/wcc-pathfinder.md) | todo | Write the case study |
 | Live | [Car search](projects/live/car-search.md) | todo | Make public; write the case study |
