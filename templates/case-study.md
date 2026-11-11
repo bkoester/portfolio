@@ -2,6 +2,7 @@
 title: Project name
 bucket: past | live | um-hr
 status: todo
+publish: false
 visibility: public | private | description-only
 repos: []
 papers: []

@@ -2,6 +2,8 @@
 title: Self-healing EC2 host
 bucket: live
 status: done
+publish: true
+site_order: 10
 visibility: public
 repos: [ec2-infra, ec2-apps]
 papers: []
@@ -28,17 +30,13 @@ kept 15 months), boot logs, and Spot prices.
 
 ## Approach
 
+<!-- alt: Architecture: Terraform on a laptop manages an auto-scaling group that runs one Spot Docker host. On boot the host re-attaches a standalone data volume and an Elastic IP, fetches secrets from Parameter Store and pulls the apps repo. Apps reach the internet through outbound Cloudflare tunnels; logs and alarms go to CloudWatch and email. -->
 ```mermaid
-flowchart LR
-  laptop[Laptop: Terraform] -->|apply| asg
-  subgraph aws[AWS us-east-2a]
-    asg[Auto-scaling group<br/>Spot, 8 Graviton types] --> host[Docker host]
-    ebs[(Encrypted /data volume<br/>standalone, snapshots every 12h)] -. re-attached on boot .-> host
-    eip[Elastic IP] -. re-associated on boot .-> host
-    ssm[SSM Parameter Store<br/>deploy keys, tunnel tokens] -. fetched on boot .-> host
-    host --> cw[CloudWatch logs and alarms] --> sns[SNS email]
-  end
-  github[ec2-apps repo] -->|pulled on boot| host
+flowchart TB
+  laptop[Laptop: Terraform] -->|apply| asg[Auto-scaling group<br/>Spot, 8 Graviton types, one zone]
+  asg -->|launches and replaces| host[Docker host<br/>15 containers, 9 scheduled jobs]
+  boot["Restored on every boot<br/>encrypted /data volume, snapshots every 12h<br/>Elastic IP<br/>deploy keys and tunnel tokens from Parameter Store<br/>apps repo from GitHub"] -.-> host
+  host --> cw[CloudWatch logs and alarms] --> sns[Email alerts]
   host -->|outbound only| cf[Cloudflare tunnels] --> web((Public subdomains))
 ```
 

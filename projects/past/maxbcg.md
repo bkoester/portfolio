@@ -2,6 +2,8 @@
 title: MaxBCG galaxy cluster finder and catalog
 bucket: past
 status: done
+publish: true
+site_order: 20
 visibility: description-only
 repos: []
 papers: [10.1086/512092, 10.1086/509599, hdl:2027.42/126198]
