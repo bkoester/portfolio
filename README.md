@@ -54,6 +54,7 @@ board below, and later the website, can be generated from it.
 | U-M HR | [Report and data catalogue](projects/um-hr/data-catalogue.md) | todo | Open template for Midwestern State |
 | U-M HR | [Leadership reporting](projects/um-hr/leadership-reporting.md) | todo | Description only |
 | U-M HR | [Docs to GitHub knowledge-base sync](projects/um-hr/docs-kb-sync.md) | todo | Rewrite as a small open-source tool |
+| U-M HR | [Small agents and staff upskilling](projects/um-hr/small-agents.md) | todo | Placeholder |
 
 ## Papers
 
