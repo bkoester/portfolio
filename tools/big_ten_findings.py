@@ -3,6 +3,11 @@
 
     python3 tools/big_ten_findings.py ~/um-careers-data/um_careers.db > big_ten_findings.json
 
+Against the live database on the host, from the laptop (host.sh is in ec2-apps):
+
+    B64=$(base64 < tools/big_ten_findings.py | tr -d '\n')
+    /path/to/ec2-apps/scripts/host.sh "echo $B64 | base64 -d | python3 - /data/apps/big-ten-jobs-data/um_careers.db" > big_ten_findings.json
+
 Read-only (opens the file with mode=ro). Output is counts and medians by school only: no job titles,
 descriptions or URLs, and nothing from the personal feed table. Standard library only.
 
@@ -94,10 +99,10 @@ def main(path):
                 missing.append(d.isoformat())
             d += timedelta(days=1)
         gaps[school] = {"days_with_no_activity": len(missing), "longest_run": _longest_run(missing),
-                        "dates": missing if len(missing) <= 40 else missing[:40] + ["..."]}
+                        "dates": missing if len(missing) <= 15 else missing[:15] + ["..."]}
     out["gaps"] = gaps
 
-    json.dump(out, sys.stdout, indent=1)
+    json.dump(out, sys.stdout, separators=(',', ':'))  # compact: SSM truncates output at 24,000 characters
     print()
 
 
