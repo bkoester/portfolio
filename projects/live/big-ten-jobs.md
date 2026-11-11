@@ -40,8 +40,8 @@ exposes more (department, work mode, pay class); the others do not.
   postings not seen before. A re-run on an unchanged school takes minutes instead of hours.
 - **One table.** SQLite, keyed by posting, with first-seen, last-seen and active maintained by a daily diff.
   That is what turns a list of today's jobs into a history.
-- **Salary parsing.** Pay is read from description text: only lines that mention salary, pay or wage, small
-  amounts such as bonuses dropped, hourly and annual figures kept apart.
+- **Salary parsing.** Pay is read from description text: only lines that mention salary, pay or wage, stray
+  small dollar amounts dropped, hourly and annual figures kept apart.
 - **Explorer.** A read-only FastAPI service and a SvelteKit front end over the same file: a filterable table
   with full-text search of descriptions, per-school activity, and what is new since the last crawl. The
   scraper is the only writer.
@@ -60,7 +60,7 @@ counts and medians by school:
 
 ## Running it
 
-- **A retry storm of its own making.** In July 2026 Michigan's crawl failed every day for about two weeks on
+- **A retry storm of its own making.** In July 2026 Michigan's crawl failed every day for about nine days on
   truncated responses. The host's catch-up logic decided whether today's crawl had run by looking for a file
   written only after a fully successful Michigan crawl, so every Spot replacement re-ran the whole batch: 6 to
   16 times a day against a site that was already struggling. The fix was retries with backoff and a marker
@@ -71,7 +71,8 @@ counts and medians by school:
 - **Configuration that lived only on the server.** Five of the eleven schools had been added by editing the
   copy on the host and were never committed. The explorer, with six schools hardcoded, silently hid them. The
   registry was recovered into the repo and the explorer now reads its school list from the data.
-- **Salary edge cases.** Sign-on bonuses read as wages, and hourly and annual figures merged into one range.
+- **Salary edge cases.** Bonus and raise amounts read as wages, and hourly and annual figures merged into one
+  range.
 - A daily digest email was tried and dropped; the explorer proved more useful
   ([what came and went](ec2-platform.md)).
 
