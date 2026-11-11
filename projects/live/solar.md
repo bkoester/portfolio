@@ -90,6 +90,12 @@ household's consumption patterns stay out of this write-up.
 - How the live model has done since April 2026. The daily evaluation log has the answer.
 - Why the dashboard was changed in June 2026 from an advisor that told you what to do into a reporting page.
 
+## Where it stands
+
+Alerts go straight to a Discord channel. The bot does a decent job of answering questions from the weather
+station, the weather forecast and the inverter's consumption data. It is the focused kind of bot: one subject,
+tools that match it.
+
 ## Running it
 
 Most of the work after the notebooks went into operations, and the history records what broke:
@@ -102,7 +108,7 @@ Most of the work after the notebooks went into operations, and the history recor
   checks and daily evaluation all died from mid-July to early September 2026 while storm alerts kept flowing
   and hid the failure. The fix was a version pin and a dead-man check that reports when an expected file has
   not landed, kept separate from the alert layer it guards.
-- **A bot that sounded right and was wrong.** Monthly rainfall totals ran 40 to 80% high because a daily
+- **A bot that sounded right and was wrong, until fixed.** Monthly rainfall totals ran 40 to 80% high because a daily
   counter that resets at local midnight was being grouped by UTC day, so rainy days were counted twice. The
   bot was also adding a month of daily values in its head; the query now returns the total. Separately, a
   300-token output cap was cutting off its tool calls, so it kept replying "let me pull that" and never did.
