@@ -96,6 +96,8 @@ From the system's own daily evaluation log, 23 May to 23 October 2026 (97 scored
   which is two days before the day being predicted, and within a month the formula reduces to repeating that
   number. The notebook tested a one-day lag.
 - 44 of the 154 days in the period have no row, nearly all inside the July to September outage.
+- Acting on that, the code now predicts from the monthly average alone (November 2026), with the old
+  adjustment kept behind a switch.
 - Over the 110 logged days, which are mostly summer, the bill was 80% lower than buying everything from the
   grid ($257 saved), with 68% of consumption covered without the grid.
 
@@ -156,7 +158,8 @@ local days and returned totals, instead of leaving that to the model.
 - [ ] Notebook 4's closing summary quotes errors of about 4.5 and 6.65 kWh; its own outputs say 4.85 and 8.43
 - [x] Live accuracy from the evaluation log (through 23 October 2026)
 - [ ] Why the evaluation log stops on 23 October 2026
-- [ ] Switch the live prediction to the monthly average, or feed it the day just ended
+- [x] Live prediction switched to the monthly average in the code (2026-11-10)
+- [ ] Ben: deploy it (SAM for the Lambdas, deploy.sh for the dashboard)
 - [ ] Why the dashboard pivoted from advisor to reporting
 - [ ] Before the repo could go public: remove the site location and station ID, and a code comment that names
       a utility bill file
