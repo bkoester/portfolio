@@ -14,9 +14,9 @@ portfolio needs from it.
 | college-scraper | public | live | [college-scraper](../projects/live/college-scraper.md) | Fold setup docs into one README |
 | workspace | private | live | [ec2-platform](../projects/live/ec2-platform.md) | Keep private; mention as an app on the host |
 | pages | private | live | [ec2-platform](../projects/live/ec2-platform.md) | Keep private |
-| solar | private | live | [ec2-platform](../projects/live/ec2-platform.md) | Not yet reviewed; mention as an app on the host |
-| solar_docker | private | live | — | Not yet reviewed; likely superseded by solar |
-| cloud9solar | private | live | — | Not yet reviewed; likely superseded by solar |
+| solar | private | live | [solar](../projects/live/solar.md) | Keep private (site location, station ID); case study written from it |
+| solar_docker | private | live | [solar](../projects/live/solar.md) | Empty; superseded by solar; archive |
+| cloud9solar | private | live | [solar](../projects/live/solar.md) | Earliest version; superseded by solar; archive |
 | journal-dashboard | private | live | [ec2-platform](../projects/live/ec2-platform.md) | Keep private; mention as an app on the host |
 | fantrax | private | personal | — | Keep private |
 | whatsapp-nick-bot | private | personal | — | Keep private |

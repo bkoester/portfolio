@@ -63,8 +63,8 @@ flowchart LR
 
 ## Apps it runs
 
-big-ten-jobs (scraper, feed and explorer), ask-ben (database, API, evaluation), wcc-pathfinder, a solar
-dashboard and Discord bot, a journal dashboard, the workspace project-notes agent, and fantrax: 15 containers
+big-ten-jobs (scraper, feed and explorer), ask-ben (database, API, evaluation), wcc-pathfinder, a
+[solar dashboard and Discord bot](solar.md), a journal dashboard, the workspace project-notes agent, and fantrax: 15 containers
 and nine scheduled jobs.
 
 ## The Discord agent (under review)
