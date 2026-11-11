@@ -1,11 +1,12 @@
 ---
 title: Transcript of the Future
 bucket: past
-status: todo
+status: done
+publish: false
 visibility: public
 repos: [TOF, TOF2Paper]
 papers: [10.1145/3027385.3027418, 10.3886/icpsr38594.v1]
-next: Rename LARC column names in TOF to generic ones
+next: Ben approves it for the site; repo cleanup is tracked under To resolve
 ---
 
 # Transcript of the Future
@@ -47,16 +48,16 @@ credit intensity; course and demographic diversity; student-course fixed effects
   doi:10.1145/3027385.3027418 (first author)
 - Koester et al. College and Beyond II (CBII) Student Experience Analytics, 2000–2021. ICPSR 38594, 2022.
   doi:10.3886/icpsr38594.v1 (first author)
-- Data-Driven Representation of Student Experience with the Transcript of the Future: draft prepared for LAK19
-  (TOF2Paper). Open question: accepted, or unpublished?
 
 ## Code
 
-- [TOF](https://github.com/bkoester/TOF): the toolkit
+- TOF: the toolkit, in R. The repo is being tidied before it is linked here.
 
 ## To resolve
 
-- [ ] Rename the internal column names to generic ones in code and README
-- [ ] Decide on the LAK19 draft: post as a preprint, or retire it
-- [ ] Add a small synthetic sample so the toolkit runs end to end
+- [ ] Ben: approve for the site (`publish: true`)
+- [ ] Repos: rename the internal column names in TOF to generic ones in code and README, then link the repo
+- [ ] Ben: the LAK19 draft (Data-Driven Representation of Student Experience, in TOF2Paper): was it accepted? If
+      not, post as a preprint or retire it
+- [ ] Repos: add a small synthetic sample so the toolkit runs end to end
 - [x] Fill in Results (from the papers; see papers/)

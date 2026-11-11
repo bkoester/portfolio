@@ -1,11 +1,12 @@
 ---
 title: Campus networks
 bucket: past
-status: todo
+status: done
+publish: false
 visibility: public
 repos: [acad_network, unizin, NetworkWeightingManuscript]
 papers: [10.1007/s10755-019-09497-3]
-next: Merge the network code into one repo
+next: Ben approves it for the site; repo merge is tracked under To resolve
 ---
 
 # Campus networks
@@ -41,16 +42,17 @@ projected networks; degree, clustering, eigenvector and triangle measures; Gephi
 
 - Israel, Koester & McKay. Campus Connections: Student and Course Networks in Higher Education. Innovative Higher
   Education, 2020. doi:10.1007/s10755-019-09497-3
-- Weighted Networks: manuscript draft for the Journal of Learning Analytics (NetworkWeightingManuscript). Open
-  question: the methods side of Campus Connections, or a separate paper?
 
 ## Code
 
-- acad_network (fork, with collaborator code), unizin: to be merged into one networks repo
+- Network construction in C++ and Python, analysis in R. Not linked here yet.
 
 ## To resolve
 
-- [ ] Merge into one networks repo with a synthetic example
-- [ ] Settle the weighted-networks draft: blog post, preprint, or retire
+- [ ] Ben: approve for the site (`publish: true`)
+- [ ] Repos: merge acad_network (fork, with collaborator code) and unizin into one networks repo with a
+      synthetic example
+- [ ] Ben: the weighted-networks draft for the Journal of Learning Analytics (NetworkWeightingManuscript): the
+      methods side of Campus Connections, or a separate paper? Blog post, preprint, or retire
 - [x] Fill in Results (from the paper; see papers/)
 - [ ] Ben: his role on Campus Connections

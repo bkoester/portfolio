@@ -33,18 +33,18 @@ board below, and later the website, can be generated from it.
 
 | Bucket | Project | Status | Next step |
 | --- | --- | --- | --- |
-| Past | [Grade penalties and course pathways](projects/past/grade-penalties.md) | todo | Fold PLA, pla-devel, aim-analytics, cic-gp into one repo |
-| Past | [Transcript of the Future](projects/past/transcript-of-the-future.md) | todo | Rename LARC column names; decide on the LAK19 draft |
-| Past | [SEISMIC STEM-equity collaboration](projects/past/seismic.md) | todo | Scrub LARC SQL or keep private and let the papers speak |
-| Past | [Campus networks](projects/past/campus-networks.md) | todo | Merge network repos; settle the weighted-networks draft |
-| Past | [Learning-analytics data architecture](projects/past/larc-infrastructure.md) | todo | Paper only; repos stay private |
+| Past | [Grade penalties and course pathways](projects/past/grade-penalties.md) | done | Ben approves it for the site |
+| Past | [Transcript of the Future](projects/past/transcript-of-the-future.md) | done | Ben approves it for the site |
+| Past | [SEISMIC STEM-equity collaboration](projects/past/seismic.md) | done | Ben approves it for the site |
+| Past | [Campus networks](projects/past/campus-networks.md) | done | Ben approves it for the site |
+| Past | [Learning-analytics data architecture](projects/past/larc-infrastructure.md) | done | Ben approves it for the site |
 | Past | [Synthetic student transcripts (SSU)](projects/past/synthetic-transcripts.md) | todo | Refresh dependencies, add a worked example |
 | Past | [Equity-analytics workshop (LASI 2019)](projects/past/lasi-equity-workshop.md) | todo | Rename columns; present as teaching |
 | Past | [MaxBCG galaxy cluster finder and catalog](projects/past/maxbcg.md) | done | — |
 | Live | [Self-healing EC2 host](projects/live/ec2-platform.md) | done | Make both repos public |
 | Live | [Home solar and battery advisor](projects/live/solar.md) | in-progress | Ben checks the write-up |
 | Live | [University job postings tracker](projects/live/big-ten-jobs.md) | in-progress | Ben runs the findings script |
-| Live | [Ask Ben](projects/live/ask-ben.md) | todo | Review eval results |
+| Live | [Ask Ben](projects/live/ask-ben.md) | todo | Ben writes the first published answers |
 | Live | [WCC pathfinder](projects/live/wcc-pathfinder.md) | todo | Write the case study |
 | Live | [Car search](projects/live/car-search.md) | todo | Make public; write the case study |
 | Live | [College scraper](projects/live/college-scraper.md) | todo | Consolidate setup docs into one README |

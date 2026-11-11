@@ -1,11 +1,12 @@
 ---
 title: Learning-analytics data architecture
 bucket: past
-status: todo
+status: done
+publish: false
 visibility: description-only
 repos: [LARC, aws_larc_pipeline, aws_larc_cookbook, larc_redshift_load, LARC_lambda_process, larc_pure_python, larc-sql-test]
 papers: [10.18608/jla.2019.62.8]
-next: Make the public LARC repo private; let the paper carry this project
+next: Ben approves it for the site; make the public LARC repo private
 ---
 
 # Learning-analytics data architecture
@@ -13,7 +14,7 @@ next: Make the public LARC repo private; let the paper carry this project
 Built and maintained a research-ready student data warehouse so faculty and staff could study teaching and
 learning without each team rebuilding the data. The model is published in the Journal of Learning Analytics.
 
-## How to describe it publicly
+## Approach
 
 Designed a collaborative model for institutional learning-analytics data: a curated research dataset of
 student records and course enrollments, its documentation and access process, and AWS pipelines (Lambda,
@@ -28,7 +29,7 @@ Redshift) that loaded and refreshed it.
   Survey's data releases, the same survey behind the [MaxBCG catalog](maxbcg.md)
 - More than 50 investigators had access by the time of publication, with about a week from request to data; the
   approach was reused for a later institutional enrollment dataset
-- The paper closes with a six-point framework for other institutions, which reads as a consulting playbook
+- The paper closes with a six-point framework for other institutions building the same thing
 
 ## Papers
 
@@ -38,9 +39,11 @@ Redshift) that loaded and refreshed it.
 
 ## Code
 
-All repos stay private: they name internal tables and columns throughout.
+The pipeline code is private.
 
 ## To resolve
 
-- [ ] Make the public LARC repo private (one of its SQL files names internal tables)
-- [ ] One paragraph on the AWS pipeline design, in general terms
+- [ ] Ben: approve for the site (`publish: true`)
+- [ ] Repos: make the public LARC repo private (one of its SQL files names internal tables); the other repos
+      stay private because they name internal tables and columns throughout
+- [ ] Optional: one paragraph on the AWS pipeline design, in general terms

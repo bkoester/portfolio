@@ -1,11 +1,12 @@
 ---
 title: Grade penalties and course pathways
 bucket: past
-status: todo
+status: done
+publish: false
 visibility: public
 repos: [PLA, pla-devel, aim-analytics, cic-gp]
 papers: [10.1177/2332858417743754, 10.3886/e108502v1, 10.1119/perc.2016.pr.042]
-next: Fold the four repos into PLA and archive the rest
+next: Ben approves it for the site; repo consolidation is tracked under To resolve
 ---
 
 # Grade penalties and course pathways
@@ -54,7 +55,6 @@ a course; student networks rendered with Gephi.
 ## Code
 
 - [PLA](https://github.com/bkoester/PLA): grade-penalty, persistence and pathway modules with synthetic data
-- pla-devel, aim-analytics, cic-gp: earlier versions of the same code; to be folded in and archived
 
 ## Teaching
 
@@ -63,7 +63,8 @@ Michigan.
 
 ## To resolve
 
-- [ ] Fold pla-devel, aim-analytics and cic-gp into PLA; archive them
-- [ ] README states plainly that the data is synthetic and links the papers
+- [ ] Ben: approve for the site (`publish: true`)
+- [ ] Repos: fold pla-devel, aim-analytics and cic-gp (earlier versions of the same code) into PLA; archive them
+- [ ] Repos: PLA README states plainly that the data is synthetic and links the papers
 - [x] Fill in Results (from the papers; see papers/)
 - [ ] Ben: his role on the AERA Open paper
