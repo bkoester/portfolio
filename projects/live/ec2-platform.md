@@ -1,11 +1,11 @@
 ---
 title: Self-healing EC2 host
 bucket: live
-status: in-progress
+status: done
 visibility: public
 repos: [ec2-infra, ec2-apps]
 papers: []
-next: Ben checks the write-up; then strip the subnet ID and make both repos public
+next: Strip the subnet ID, review ec2-apps for secrets, then make both repos public
 ---
 
 # Self-healing EC2 host
@@ -99,9 +99,9 @@ way. Retired so far:
 | What | Ran | What happened |
 | --- | --- | --- |
 | OpenClaw agent gateway | Mar to Apr 2026 | The host's original purpose: run the agent in the cloud to keep it off the laptop, for security. Tried as a container, then a native install. It never reliably survived Spot interruptions, a problem Claude Code on the same host has not had, so it was removed and the host reset to a generic app platform. |
-| NanoClaw personal assistant | Mar to Apr 2026 | Auto-deployed on boot for two weeks, then removed in the same reset. |
-| Big Ten daily digest email | May to Oct 2026 | The email was dropped; the scrape and its feed carry on. |
-| Flight-price watch | Sep to Oct 2026 | A daily price check in the morning brief, retired after a month. |
+| NanoClaw personal assistant | Mar to Apr 2026 | Containerized by design, for security, and auto-deployed on boot. It had the same trouble as OpenClaw: getting it to restart correctly after a Spot interruption. Removed in the same reset. |
+| Big Ten daily digest email | May to Oct 2026 | An experiment in event-triggered email: each successful scrape published a summary through SNS. SNS email is plain text only, with no HTML, and the daily digest proved less useful than the explorer app, so the email was dropped. The scrape and its feed carry on. |
+| Flight-price watch | Sep to Oct 2026 | A daily price check in the morning brief. The fares being tracked barely moved from day to day, so the daily report became clutter and was retired after a month. |
 | Car-search tracker | Sep to Nov 2026 | Its refresh timer was removed first because it burned a metered API; the app was archived once the search ended, with a restore runbook kept in its repo. |
 | Overnight shutdown | removed, then restored Aug 2026 | Dropped to run around the clock, then brought back with an earlier cut-off because nothing needed serving overnight. |
 
@@ -149,7 +149,7 @@ way. Retired so far:
 - [ ] Boot-to-serving time from the boot logs
 - [x] "What I'd do differently" checked by Ben
 - [x] What fell short with the Discord chat mode
-- [ ] Ben: anything missing from the retired list
+- [x] Retired list checked by Ben, with reasons
 - [ ] Replace the default subnet ID in variables.tf with a required variable
 - [ ] Review ec2-apps for secrets; then make both repos public
 - [ ] Consider publishing as a reusable template
