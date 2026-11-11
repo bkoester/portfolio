@@ -6,14 +6,14 @@ publish: false
 visibility: description-only
 repos: [big-ten-jobs]
 papers: []
-next: Ben runs tools/big_ten_findings.py against the database so the Results can be written
+next: Ben checks the write-up; re-run the findings script for the weekly counts
 ---
 
 # University job postings tracker
 
 What do large universities hire for, how long do postings stay open, and what do they pay? A daily scraper has
-recorded every posting at eleven universities since May 2026, with an explorer on top; the findings are still
-to be pulled from the data.
+recorded 27,637 postings at eleven universities, with an explorer on top. The clearest finding so far: whether
+a posting states its pay follows state law almost exactly.
 
 ## The problem
 
@@ -49,14 +49,56 @@ exposes more (department, work mode, pay class); the others do not.
 
 ## Results
 
-Open question: the findings. `tools/big_ten_findings.py` in this repo produces them from the database as
-counts and medians by school:
+From `tools/big_ten_findings.py`, run against the database on 11 November 2026 (output in
+`data/big_ten_findings_2026-11-11.json`). 27,637 postings recorded; 6,333 open that day.
 
-- Postings and active postings per school
-- New postings per week, per school
-- How long postings stay open
-- Salary coverage and median pay, hourly and annual
-- Michigan's split between on-site, hybrid and remote
+**Stated pay follows state law**
+
+Share of open postings where the scraper found a pay figure:
+
+| University | State | Postings with pay | State requires pay in postings |
+| --- | --- | --- | --- |
+| Washington State | WA | 93% | yes, since 2023 |
+| USC | CA | 89% | yes, since 2023 |
+| Maryland | MD | 85% | yes, since October 2024 |
+| Michigan | MI | 45% | no |
+| Penn State | PA | 26% | no |
+| UT Austin | TX | 21% | no |
+| Texas A&M | TX | 14% | no |
+| Ohio State | OH | 11% | no |
+| Louisville | KY | 6% | no |
+| Iowa State | IA | 1% | no |
+| Purdue | IN | 0% | no |
+
+The three universities in states with a pay-transparency law state pay on 85 to 93% of postings. No other
+school reaches half. Open question: Purdue's 0% across 476 postings may be the SuccessFactors extractor not
+reading pay at all, not Purdue never stating it.
+
+**Two posting styles**
+
+Median days a posting stayed listed, closed postings only:
+
+- Six schools close in about two weeks, with a narrow spread: Texas A&M 9, Michigan 11, Ohio State 11, Iowa
+  State 12, Louisville 13, Washington State 14. Half of Michigan's 6,426 closed postings ran 7 to 15 days,
+  which looks like a fixed posting window.
+- Five run two to three times longer, with a wide spread: UT Austin 19, USC 24, Penn State 26, Purdue 31,
+  Maryland 32.5 (a quarter of Maryland's ran past 71 days).
+
+Postings still open are not counted, so the long-running ones are understated.
+
+**Michigan's work modes**
+
+Of 884 open postings, 70% are on-site, 26% hybrid and 3% remote.
+
+**What the numbers exposed**
+
+- Pay amounts are not yet comparable across schools. Washington State states monthly pay, which is stored as
+  annual (median "annual" pay of $6,943); one Iowa State posting parsed as $3.5 million; Maryland's hourly
+  median of $82.50 is not credible. Coverage holds up; amounts need the parser fixed first.
+- Outside Michigan, no school shows more than three days in a row without a new or closed posting since May,
+  and those runs fall on weekends and holidays. Michigan's history before May 2026 is sparse, not daily.
+- Open question: new postings per week. The first run returned nothing for it (a date function the host's
+  database lacks); the script is fixed and needs one more run.
 
 ## Running it
 
@@ -88,8 +130,11 @@ counts and medians by school:
 
 ## To resolve
 
-- [ ] Ben: run `python3 tools/big_ten_findings.py <path to um_careers.db> > big_ten_findings.json` and send the
-      file; then write Results with two or three charts
+- [x] Findings script run on the host (2026-11-11); Results written from it
+- [ ] Re-run the script for weekly counts (same command; the week calculation is fixed)
+- [ ] Check whether the SuccessFactors extractor parses pay at all (Purdue 0%)
+- [ ] Fix pay parsing: monthly pay (Washington State), implausible outliers, Maryland hourly
+- [ ] Charts: pay coverage by state law; days listed by school
 - [ ] Ben: check "What I'd do differently"
 - [ ] Ben: decide how the public page names the sites. The repo's own survey notes that Workday's terms ask
       for written permission for automated access and that one school's robots.txt disallows its search path

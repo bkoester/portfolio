@@ -55,11 +55,14 @@ def main(path):
            FROM jobs GROUP BY school_id ORDER BY postings DESC""")]
 
     weekly = defaultdict(dict)
-    for r in q("""SELECT school_id, strftime('%G-W%V', first_seen) AS wk, first_seen, COUNT(*) AS n
+    # ISO week worked out here, not in SQL: older SQLite builds have no %G/%V and return NULL.
+    for r in q("""SELECT school_id, first_seen, COUNT(*) AS n
                   FROM jobs WHERE first_seen IS NOT NULL GROUP BY school_id, first_seen"""):
         if r["first_seen"] == first_day[r["school_id"]]:
             continue
-        weekly[r["school_id"]][r["wk"]] = weekly[r["school_id"]].get(r["wk"], 0) + r["n"]
+        iso = date.fromisoformat(r["first_seen"][:10]).isocalendar()
+        wk = f"{iso[0]}-W{iso[1]:02d}"
+        weekly[r["school_id"]][wk] = weekly[r["school_id"]].get(wk, 0) + r["n"]
     out["weekly_new"] = {s: dict(sorted(w.items())) for s, w in sorted(weekly.items())}
 
     open_days = defaultdict(list)

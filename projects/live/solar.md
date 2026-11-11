@@ -85,9 +85,24 @@ household's consumption patterns stay out of this write-up.
 - Solar plus battery cut the bill by 64.5% against buying everything from the grid: $842 over 467 days, about
   $659 a year, with 52% of consumption covered without the grid.
 
+**Live, since the notebooks**
+
+From the system's own daily evaluation log, 23 May to 23 October 2026 (97 scored days):
+
+- The live prediction missed by 4.7 kWh a day. The monthly average alone, using the averages from the
+  notebook, would have missed by 3.5 kWh on the same days: about a quarter less error.
+- The reason is timing. On 82 of 92 days the live prediction is exactly the generation from two days earlier.
+  The "how did yesterday go" adjustment uses the last complete day in storage when the nightly job runs,
+  which is two days before the day being predicted, and within a month the formula reduces to repeating that
+  number. The notebook tested a one-day lag.
+- 44 of the 154 days in the period have no row, nearly all inside the July to September outage.
+- Over the 110 logged days, which are mostly summer, the bill was 80% lower than buying everything from the
+  grid ($257 saved), with 68% of consumption covered without the grid.
+
 **Open questions**
 
-- How the live model has done since April 2026. The daily evaluation log has the answer.
+- The evaluation log's last row is 23 October 2026. Either the evaluator has not written since, or the copy
+  used here was not current.
 - Why the dashboard was changed in June 2026 from an advisor that told you what to do into a reporting page.
 
 ## Where it stands
@@ -129,7 +144,8 @@ local days and returned totals, instead of leaving that to the model.
 
 ## What I'd do differently
 
-- Start with the dumbest baseline. The monthly average was available on day one and nothing beat it.
+- Start with the dumbest baseline. The monthly average was available on day one and nothing beat it, in the
+  backtest or in five months of live running.
 - Put the dead-man check in before the first alert. The outage ran eight weeks because nothing was watching
   for silence.
 
@@ -138,7 +154,9 @@ local days and returned totals, instead of leaving that to the model.
 - [ ] Ben: check the write-up, and whether the dollar figures go public
 - [ ] Ben: check "What I'd do differently"
 - [ ] Notebook 4's closing summary quotes errors of about 4.5 and 6.65 kWh; its own outputs say 4.85 and 8.43
-- [ ] Pull the live evaluation log and report accuracy since April 2026
+- [x] Live accuracy from the evaluation log (through 23 October 2026)
+- [ ] Why the evaluation log stops on 23 October 2026
+- [ ] Switch the live prediction to the monthly average, or feed it the day just ended
 - [ ] Why the dashboard pivoted from advisor to reporting
 - [ ] Before the repo could go public: remove the site location and station ID, and a code comment that names
       a utility bill file
