@@ -33,11 +33,11 @@ board below, and later the website, can be generated from it.
 
 | Bucket | Project | Status | Next step |
 | --- | --- | --- | --- |
-| Past | [Grade penalties and course pathways](projects/past/grade-penalties.md) | done | Ben approves it for the site |
-| Past | [Transcript of the Future](projects/past/transcript-of-the-future.md) | done | Ben approves it for the site |
-| Past | [SEISMIC STEM-equity collaboration](projects/past/seismic.md) | done | Ben approves it for the site |
-| Past | [Campus networks](projects/past/campus-networks.md) | done | Ben approves it for the site |
-| Past | [Learning-analytics data architecture](projects/past/larc-infrastructure.md) | done | Ben approves it for the site |
+| Past | [Grade penalties and course pathways](projects/past/grade-penalties.md) | done | Published; repo cleanup remains |
+| Past | [Transcript of the Future](projects/past/transcript-of-the-future.md) | done | Published; repo cleanup remains |
+| Past | [SEISMIC STEM-equity collaboration](projects/past/seismic.md) | done | Published; repo cleanup remains |
+| Past | [Campus networks](projects/past/campus-networks.md) | done | Published; repo cleanup remains |
+| Past | [Learning-analytics data architecture](projects/past/larc-infrastructure.md) | done | Published; repo cleanup remains |
 | Past | [Synthetic student transcripts (SSU)](projects/past/synthetic-transcripts.md) | todo | Refresh dependencies, add a worked example |
 | Past | [Equity-analytics workshop (LASI 2019)](projects/past/lasi-equity-workshop.md) | todo | Rename columns; present as teaching |
 | Past | [MaxBCG galaxy cluster finder and catalog](projects/past/maxbcg.md) | done | — |

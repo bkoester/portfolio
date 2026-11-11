@@ -2,11 +2,12 @@
 title: SEISMIC STEM-equity collaboration
 bucket: past
 status: done
-publish: false
+publish: true
+site_order: 34
 visibility: description-only
 repos: [SEISMIC]
 papers: [10.1186/s40594-024-00474-7, 10.1187/cbe.24-02-0051, 10.3389/feduc.2023.1176876, 10.1187/cbe.21-06-0158]
-next: Ben approves it for the site; the repo decision is tracked under To resolve
+next: Published. Remaining: the repo decision is tracked under To resolve
 ---
 
 # SEISMIC STEM-equity collaboration
@@ -63,7 +64,7 @@ pairwise student similarity, and replication of collaborators' analyses.
 
 ## To resolve
 
-- [ ] Ben: approve for the site (`publish: true`)
+- [x] Approved for the site by Ben (2026-11-10)
 - [ ] Repos: SEISMIC is public today and contains SQL that names internal tables. Either delete those files and
       rename columns, or make the repo private and let the papers carry it
 - [x] Fill in Results (from the papers; see papers/)

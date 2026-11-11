@@ -2,11 +2,12 @@
 title: Learning-analytics data architecture
 bucket: past
 status: done
-publish: false
+publish: true
+site_order: 38
 visibility: description-only
 repos: [LARC, aws_larc_pipeline, aws_larc_cookbook, larc_redshift_load, LARC_lambda_process, larc_pure_python, larc-sql-test]
 papers: [10.18608/jla.2019.62.8]
-next: Ben approves it for the site; make the public LARC repo private
+next: Published. Remaining: make the public LARC repo private
 ---
 
 # Learning-analytics data architecture
@@ -43,7 +44,7 @@ The pipeline code is private.
 
 ## To resolve
 
-- [ ] Ben: approve for the site (`publish: true`)
+- [x] Approved for the site by Ben (2026-11-10)
 - [ ] Repos: make the public LARC repo private (one of its SQL files names internal tables); the other repos
       stay private because they name internal tables and columns throughout
 - [ ] Optional: one paragraph on the AWS pipeline design, in general terms

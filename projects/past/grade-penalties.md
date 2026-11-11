@@ -2,11 +2,12 @@
 title: Grade penalties and course pathways
 bucket: past
 status: done
-publish: false
+publish: true
+site_order: 30
 visibility: public
 repos: [PLA, pla-devel, aim-analytics, cic-gp]
 papers: [10.1177/2332858417743754, 10.3886/e108502v1, 10.1119/perc.2016.pr.042]
-next: Ben approves it for the site; repo consolidation is tracked under To resolve
+next: Published. Remaining: repo consolidation is tracked under To resolve
 ---
 
 # Grade penalties and course pathways
@@ -63,7 +64,7 @@ Michigan.
 
 ## To resolve
 
-- [ ] Ben: approve for the site (`publish: true`)
+- [x] Approved for the site by Ben (2026-11-10)
 - [ ] Repos: fold pla-devel, aim-analytics and cic-gp (earlier versions of the same code) into PLA; archive them
 - [ ] Repos: PLA README states plainly that the data is synthetic and links the papers
 - [x] Fill in Results (from the papers; see papers/)

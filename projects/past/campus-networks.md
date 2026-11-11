@@ -2,11 +2,12 @@
 title: Campus networks
 bucket: past
 status: done
-publish: false
+publish: true
+site_order: 36
 visibility: public
 repos: [acad_network, unizin, NetworkWeightingManuscript]
 papers: [10.1007/s10755-019-09497-3]
-next: Ben approves it for the site; repo merge is tracked under To resolve
+next: Published. Remaining: repo merge is tracked under To resolve
 ---
 
 # Campus networks
@@ -49,7 +50,7 @@ projected networks; degree, clustering, eigenvector and triangle measures; Gephi
 
 ## To resolve
 
-- [ ] Ben: approve for the site (`publish: true`)
+- [x] Approved for the site by Ben (2026-11-10)
 - [ ] Repos: merge acad_network (fork, with collaborator code) and unizin into one networks repo with a
       synthetic example
 - [ ] Ben: the weighted-networks draft for the Journal of Learning Analytics (NetworkWeightingManuscript): the

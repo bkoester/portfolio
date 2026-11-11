@@ -2,11 +2,12 @@
 title: Transcript of the Future
 bucket: past
 status: done
-publish: false
+publish: true
+site_order: 32
 visibility: public
 repos: [TOF, TOF2Paper]
 papers: [10.1145/3027385.3027418, 10.3886/icpsr38594.v1]
-next: Ben approves it for the site; repo cleanup is tracked under To resolve
+next: Published. Remaining: repo cleanup is tracked under To resolve
 ---
 
 # Transcript of the Future
@@ -55,7 +56,7 @@ credit intensity; course and demographic diversity; student-course fixed effects
 
 ## To resolve
 
-- [ ] Ben: approve for the site (`publish: true`)
+- [x] Approved for the site by Ben (2026-11-10)
 - [ ] Repos: rename the internal column names in TOF to generic ones in code and README, then link the repo
 - [ ] Ben: the LAK19 draft (Data-Driven Representation of Student Experience, in TOF2Paper): was it accepted? If
       not, post as a preprint or retire it
